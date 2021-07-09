@@ -1,0 +1,9 @@
+Websites and Resources used in development:
+
+https://reactrouter.com/web/example/basic
+https://www.programmersought.com/article/74263594888/
+https://www.programmersought.com/article/74263594888/
+https://reactjs.org/docs/getting-started.html
+https://www.npmjs.com/package/react-nav-bar
+https://www.w3schools.com/react/react_getstarted.asp
+https://github.com/sanyuan0704/react-cloud-music/blob/master/src/application/Player/normal-player/index.js
