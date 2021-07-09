@@ -1,24 +1,31 @@
-import logo from './logo.svg';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Navigation from './Navigation.js';
+import About from './fragments/About.js';
+import Home from "./HomePage.js"
+import SkillsProfile from './fragments/SkillsProfile.js';
+import WorkExperience from './fragments/WorkExperience.js';
+import Education from './fragments/Education.js';
+import Aspirations from './fragments/Aspirations.js';
 import './App.css';
+import './index.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+          <Router>
+            
+            {/*For navigation bar at top of screen using Navigation.js*/}
+            <Navigation />
+              <Switch>
+                <Route exactcomponent={About} pattern="/About" />
+                <Route component={SkillsProfile} pattern="/SkillsProfile.js" />
+                <Route component={WorkExperience} pattern="/WorkExperience" />
+                <Route component={Education} pattern="/Education" />
+                <Route component={Aspirations} pattern="/Aspirations" />
+              </Switch>
+            
+          </Router>
+        </div>
   );
 }
 
